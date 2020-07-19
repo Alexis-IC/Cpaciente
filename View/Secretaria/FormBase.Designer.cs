@@ -31,8 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormBase));
             this.tlMenuBase = new System.Windows.Forms.TableLayoutPanel();
-            this.panelContenido = new System.Windows.Forms.Panel();
-            this.toolTipBase = new System.Windows.Forms.ToolTip(this.components);
             this.btnFullScreen = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnPerfil = new System.Windows.Forms.Button();
@@ -40,6 +38,8 @@
             this.btnColapsar = new System.Windows.Forms.PictureBox();
             this.btnRotar = new System.Windows.Forms.PictureBox();
             this.btnCitas = new System.Windows.Forms.Button();
+            this.panelContenido = new System.Windows.Forms.Panel();
+            this.toolTipBase = new System.Windows.Forms.ToolTip(this.components);
             this.tlMenuBase.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnColapsar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnRotar)).BeginInit();
@@ -75,14 +75,6 @@
             this.tlMenuBase.Size = new System.Drawing.Size(160, 511);
             this.tlMenuBase.TabIndex = 1;
             // 
-            // panelContenido
-            // 
-            this.panelContenido.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelContenido.Location = new System.Drawing.Point(160, 0);
-            this.panelContenido.Name = "panelContenido";
-            this.panelContenido.Size = new System.Drawing.Size(724, 511);
-            this.panelContenido.TabIndex = 6;
-            // 
             // btnFullScreen
             // 
             this.btnFullScreen.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -102,6 +94,7 @@
             this.btnFullScreen.TabIndex = 12;
             this.btnFullScreen.Text = "        Completa";
             this.btnFullScreen.UseVisualStyleBackColor = true;
+            this.btnFullScreen.Click += new System.EventHandler(this.btnFullScreen_Click);
             // 
             // btnSalir
             // 
@@ -123,6 +116,7 @@
             this.btnSalir.Text = "          Salir";
             this.btnSalir.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSalir.UseVisualStyleBackColor = true;
+            this.btnSalir.Click += new System.EventHandler(this.btnSalir_Click);
             // 
             // btnPerfil
             // 
@@ -214,6 +208,14 @@
             this.btnCitas.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCitas.UseVisualStyleBackColor = true;
             this.btnCitas.Click += new System.EventHandler(this.btnCitas_Click);
+            // 
+            // panelContenido
+            // 
+            this.panelContenido.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelContenido.Location = new System.Drawing.Point(160, 0);
+            this.panelContenido.Name = "panelContenido";
+            this.panelContenido.Size = new System.Drawing.Size(724, 511);
+            this.panelContenido.TabIndex = 6;
             // 
             // FormBase
             // 

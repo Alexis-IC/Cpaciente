@@ -168,6 +168,12 @@
     <Compile Include="View\Secretaria\FormPerfil.Designer.cs">
       <DependentUpon>FormPerfil.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Secretaria\RegistrarPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Secretaria\RegistrarPaciente.Designer.cs">
+      <DependentUpon>RegistrarPaciente.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Secretaria\RegistroCitas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -246,6 +252,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Secretaria\FormPerfil.resx">
       <DependentUpon>FormPerfil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Secretaria\RegistrarPaciente.resx">
+      <DependentUpon>RegistrarPaciente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Secretaria\RegistroCitas.resx">
       <DependentUpon>RegistroCitas.cs</DependentUpon>

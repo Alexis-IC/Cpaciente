@@ -8,11 +8,13 @@ using System.Data.Common;
 using System.Data.SqlClient;
 using System.Data;
 using System.Windows.Forms;
+using cPaciente.View.Secretaria;
+
 namespace cPaciente.Controller
 {
     class ConexionDatos
     {
-        string cadena = "Data source=localhost; Initial catalog=CPacienteBD; Integrated security=true;";
+        string cadena = "Data source=DESKTOP-RFJSDKI; Initial catalog=CPacienteBD; Integrated security=true;";
         public SqlConnection conectarbd = new SqlConnection();
         public SqlDataAdapter adaptador;
         public SqlDataReader lector;
@@ -27,7 +29,7 @@ namespace cPaciente.Controller
 
 
         //metodo para cargar un datagrid atravez de una consulta
-        public void CargarDatagrid(string consulta, DataGridView dgv)
+        public void CargarDatagrid(string consulta , DataGridView dgv)
         {
             try
             {

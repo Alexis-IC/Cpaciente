@@ -62,6 +62,7 @@
             this.btnCambiarImagen = new System.Windows.Forms.Button();
             this.tlDatos = new System.Windows.Forms.TableLayoutPanel();
             this.lbNombre = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.gbUbicacion.SuspendLayout();
             this.tlUbicacion.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbImgPerfil)).BeginInit();
@@ -82,42 +83,44 @@
             this.tbDir.Name = "tbDir";
             this.tbDir.Size = new System.Drawing.Size(201, 47);
             this.tbDir.TabIndex = 22;
+            this.tbDir.Text = "Canton Santa Lucia 45";
             // 
             // lbDirActual
             // 
             this.lbDirActual.AutoSize = true;
             this.lbDirActual.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lbDirActual.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDirActual.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDirActual.Location = new System.Drawing.Point(3, 115);
             this.lbDirActual.Name = "lbDirActual";
-            this.lbDirActual.Size = new System.Drawing.Size(75, 29);
+            this.lbDirActual.Size = new System.Drawing.Size(186, 29);
             this.lbDirActual.TabIndex = 4;
-            this.lbDirActual.Text = "Dirección";
+            this.lbDirActual.Text = "Dirección:Canton Santa Lucia 45";
             this.lbDirActual.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lbTelActual
             // 
             this.lbTelActual.AutoSize = true;
             this.lbTelActual.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lbTelActual.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTelActual.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbTelActual.Location = new System.Drawing.Point(3, 92);
             this.lbTelActual.Name = "lbTelActual";
-            this.lbTelActual.Size = new System.Drawing.Size(71, 23);
+            this.lbTelActual.Size = new System.Drawing.Size(124, 23);
             this.lbTelActual.TabIndex = 3;
-            this.lbTelActual.Text = "Teléfono";
+            this.lbTelActual.Text = "Teléfono : 7789-9887";
             this.lbTelActual.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // lbCorreoActual
             // 
             this.lbCorreoActual.AutoSize = true;
             this.lbCorreoActual.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lbCorreoActual.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbCorreoActual.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbCorreoActual.Location = new System.Drawing.Point(3, 69);
             this.lbCorreoActual.Name = "lbCorreoActual";
-            this.lbCorreoActual.Size = new System.Drawing.Size(57, 23);
+            this.lbCorreoActual.Size = new System.Drawing.Size(188, 23);
             this.lbCorreoActual.TabIndex = 2;
-            this.lbCorreoActual.Text = "Correo";
+            this.lbCorreoActual.Text = "Correo:  ZGonza@cpaciente.com";
             this.lbCorreoActual.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.lbCorreoActual.Click += new System.EventHandler(this.lbCorreoActual_Click);
             // 
             // cbMunicipio
             // 
@@ -128,6 +131,7 @@
             this.cbMunicipio.Name = "cbMunicipio";
             this.cbMunicipio.Size = new System.Drawing.Size(201, 24);
             this.cbMunicipio.TabIndex = 15;
+            this.cbMunicipio.Text = "La Libertad";
             // 
             // lbDir
             // 
@@ -202,6 +206,7 @@
             this.cbDepartamento.Name = "cbDepartamento";
             this.cbDepartamento.Size = new System.Drawing.Size(201, 24);
             this.cbDepartamento.TabIndex = 0;
+            this.cbDepartamento.Text = "Quezaltepeque";
             // 
             // tbConfirmClave
             // 
@@ -232,6 +237,7 @@
             this.tbClave.PasswordChar = '•';
             this.tbClave.Size = new System.Drawing.Size(201, 23);
             this.tbClave.TabIndex = 20;
+            this.tbClave.Text = "010101";
             // 
             // tbUsuario
             // 
@@ -241,6 +247,7 @@
             this.tbUsuario.Name = "tbUsuario";
             this.tbUsuario.Size = new System.Drawing.Size(201, 23);
             this.tbUsuario.TabIndex = 17;
+            this.tbUsuario.Text = "Zgonza";
             // 
             // tbTel
             // 
@@ -250,6 +257,7 @@
             this.tbTel.Name = "tbTel";
             this.tbTel.Size = new System.Drawing.Size(201, 23);
             this.tbTel.TabIndex = 19;
+            this.tbTel.Text = "7789-9887";
             // 
             // tbCorreo
             // 
@@ -259,18 +267,19 @@
             this.tbCorreo.Name = "tbCorreo";
             this.tbCorreo.Size = new System.Drawing.Size(201, 23);
             this.tbCorreo.TabIndex = 18;
+            this.tbCorreo.Text = "ZGonza@cpaciente.com";
             // 
             // lbRol
             // 
             this.lbRol.AutoSize = true;
             this.lbRol.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lbRol.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbRol.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbRol.ForeColor = System.Drawing.Color.DarkRed;
             this.lbRol.Location = new System.Drawing.Point(3, 46);
             this.lbRol.Name = "lbRol";
-            this.lbRol.Size = new System.Drawing.Size(33, 23);
+            this.lbRol.Size = new System.Drawing.Size(106, 23);
             this.lbRol.TabIndex = 1;
-            this.lbRol.Text = "Rol";
+            this.lbRol.Text = "Rol:    Secretaria";
             this.lbRol.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // pbImgPerfil
@@ -439,6 +448,7 @@
             this.tlPerfil.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.21763F));
             this.tlPerfil.Size = new System.Drawing.Size(350, 248);
             this.tlPerfil.TabIndex = 15;
+            this.tlPerfil.Paint += new System.Windows.Forms.PaintEventHandler(this.tlPerfil_Paint);
             // 
             // btnCambiarImagen
             // 
@@ -459,6 +469,7 @@
             this.tlDatos.Controls.Add(this.lbCorreoActual, 0, 3);
             this.tlDatos.Controls.Add(this.lbRol, 0, 2);
             this.tlDatos.Controls.Add(this.lbNombre, 0, 1);
+            this.tlDatos.Controls.Add(this.label1, 0, 0);
             this.tlDatos.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tlDatos.Location = new System.Drawing.Point(153, 28);
             this.tlDatos.Name = "tlDatos";
@@ -476,13 +487,21 @@
             // 
             this.lbNombre.AutoSize = true;
             this.lbNombre.Dock = System.Windows.Forms.DockStyle.Left;
-            this.lbNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbNombre.Location = new System.Drawing.Point(3, 23);
             this.lbNombre.Name = "lbNombre";
-            this.lbNombre.Size = new System.Drawing.Size(65, 23);
+            this.lbNombre.Size = new System.Drawing.Size(174, 23);
             this.lbNombre.TabIndex = 0;
-            this.lbNombre.Text = "Nombre";
+            this.lbNombre.Text = "Nombre:  Zuleima Gonzales";
             this.lbNombre.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(3, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.TabIndex = 5;
             // 
             // FormPerfil
             // 
@@ -543,5 +562,6 @@
         private System.Windows.Forms.Button btnCambiarImagen;
         private System.Windows.Forms.TableLayoutPanel tlDatos;
         private System.Windows.Forms.Label lbNombre;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -12,6 +12,7 @@ namespace cPaciente.View.Secretaria
 {
     public partial class RegistroCitas : Form
     {
+        
         public RegistroCitas()
         {
             InitializeComponent();
@@ -20,6 +21,11 @@ namespace cPaciente.View.Secretaria
         private void button1_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void RegistroCitas_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

@@ -73,6 +73,7 @@
             this.tlPersonal.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 1.040285F));
             this.tlPersonal.Size = new System.Drawing.Size(736, 511);
             this.tlPersonal.TabIndex = 2;
+            this.tlPersonal.Paint += new System.Windows.Forms.PaintEventHandler(this.tlPersonal_Paint);
             // 
             // tlFiltro
             // 
@@ -170,6 +171,9 @@
             // 
             this.cbEspecialidad.Dock = System.Windows.Forms.DockStyle.Fill;
             this.cbEspecialidad.FormattingEnabled = true;
+            this.cbEspecialidad.Items.AddRange(new object[] {
+            "Pendiente",
+            "Realizada"});
             this.cbEspecialidad.Location = new System.Drawing.Point(429, 3);
             this.cbEspecialidad.Name = "cbEspecialidad";
             this.cbEspecialidad.Size = new System.Drawing.Size(150, 21);
@@ -277,6 +281,7 @@
             this.Controls.Add(this.tlPersonal);
             this.Name = "FormCitas";
             this.Text = "FormCitas";
+            this.Load += new System.EventHandler(this.FormCitas_Load);
             this.tlPersonal.ResumeLayout(false);
             this.tlFiltro.ResumeLayout(false);
             this.tlFiltro.PerformLayout();

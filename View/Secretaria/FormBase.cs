@@ -113,5 +113,31 @@ namespace cPaciente.View.Secretaria
             }
 
         }
+
+        private void btnFullScreen_Click(object sender, EventArgs e)
+        {
+            if (pantallaCompleta)
+            {
+                this.WindowState = FormWindowState.Normal;
+                this.Size = new Size(900, 550);
+                this.CenterToScreen();
+                this.FormBorderStyle = FormBorderStyle.Sizable;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Maximized;
+                this.FormBorderStyle = FormBorderStyle.None;
+                this.TopMost = true;
+            }
+
+            pantallaCompleta = !pantallaCompleta;
+        }
+
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            FormLogin log = new FormLogin();
+            log.Show();
+            Hide();
+        }
     }
 }

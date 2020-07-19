@@ -40,5 +40,10 @@ namespace cPaciente.View.Admin
             FormRegistroEmpleado frp = new FormRegistroEmpleado();
             frp.ShowDialog();
         }
+
+        private void dgPersonal_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

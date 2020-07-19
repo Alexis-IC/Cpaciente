@@ -232,6 +232,7 @@
             this.dgPersonal.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgPersonal.Size = new System.Drawing.Size(730, 346);
             this.dgPersonal.TabIndex = 4;
+            this.dgPersonal.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgPersonal_CellContentClick);
             // 
             // FormPersonal
             // 

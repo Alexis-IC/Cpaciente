@@ -12,6 +12,7 @@ namespace cPaciente.View.Secretaria
 {
     public partial class FormCitas : Form
     {
+        Controller.ConexionDatos dato = new Controller.ConexionDatos();
         public FormCitas()
         {
             InitializeComponent();
@@ -21,6 +22,16 @@ namespace cPaciente.View.Secretaria
         {
             RegistroCitas rc = new Secretaria.RegistroCitas();
             rc.ShowDialog();
+        }
+
+        private void tlPersonal_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void FormCitas_Load(object sender, EventArgs e)
+        {
+            
         }
     }
 }

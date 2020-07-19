@@ -39,8 +39,8 @@
             this.tlFiltro = new System.Windows.Forms.TableLayoutPanel();
             this.lbFiltroNombre = new System.Windows.Forms.Label();
             this.lbFiltroGenero = new System.Windows.Forms.Label();
-            this.btnAgregarPaciente = new System.Windows.Forms.Button();
             this.cbGnero = new System.Windows.Forms.ComboBox();
+            this.btnAgregarPaciente = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgPersonal)).BeginInit();
             this.tlPersonal.SuspendLayout();
             this.tlFiltro.SuspendLayout();
@@ -167,6 +167,18 @@
             this.lbFiltroGenero.Text = "Filtrar por genero";
             this.lbFiltroGenero.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // cbGnero
+            // 
+            this.cbGnero.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.cbGnero.FormattingEnabled = true;
+            this.cbGnero.Items.AddRange(new object[] {
+            "F",
+            "M"});
+            this.cbGnero.Location = new System.Drawing.Point(253, 3);
+            this.cbGnero.Name = "cbGnero";
+            this.cbGnero.Size = new System.Drawing.Size(219, 21);
+            this.cbGnero.TabIndex = 18;
+            // 
             // btnAgregarPaciente
             // 
             this.btnAgregarPaciente.Location = new System.Drawing.Point(3, 116);
@@ -175,15 +187,7 @@
             this.btnAgregarPaciente.TabIndex = 0;
             this.btnAgregarPaciente.Text = "Agregar Paciente";
             this.btnAgregarPaciente.UseVisualStyleBackColor = true;
-            // 
-            // cbGnero
-            // 
-            this.cbGnero.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.cbGnero.FormattingEnabled = true;
-            this.cbGnero.Location = new System.Drawing.Point(253, 3);
-            this.cbGnero.Name = "cbGnero";
-            this.cbGnero.Size = new System.Drawing.Size(219, 21);
-            this.cbGnero.TabIndex = 18;
+            this.btnAgregarPaciente.Click += new System.EventHandler(this.btnAgregarPaciente_Click);
             // 
             // FormPacientes
             // 

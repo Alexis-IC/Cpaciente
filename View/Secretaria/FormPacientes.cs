@@ -16,5 +16,11 @@ namespace cPaciente.View.Secretaria
         {
             InitializeComponent();
         }
+
+        private void btnAgregarPaciente_Click(object sender, EventArgs e)
+        {
+            RegistrarPaciente frp = new RegistrarPaciente();
+            frp.ShowDialog();
+        }
     }
 }
